@@ -1,0 +1,184 @@
+.container{
+    background-image: url(https://www.w3schools.com/w3images/photographer.jpg);
+    min-height:600px;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    position: relative;  
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.subcontainer-1{
+    border: 2px solid white;
+    color: white;
+    width: 200px;
+    font-weight: 400;
+    font-size: 40px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.subcontainer-2{
+border: 2px solid white;
+color: white;
+width: fit-content;
+text-align: center;
+line-height:20px;
+padding: 30px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+#para1{
+    font-size: 35px;
+}
+#para2{
+    font-size: 20px;
+}
+.nav{
+    height: 10px;
+    padding: 15px;
+    font-size: 20px;
+    border: 1px solid;
+    background-color: beige;
+    width: fit-content;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+img{
+    width: 100%;
+}
+.container-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item{
+   
+    margin-top: 24px;
+   /* border: 1px solid; */
+   width: 1000px;
+}
+
+.footer-container{
+   display: flex;
+   justify-content: center;
+}
+#contact{
+    max-width:950px ;
+    height: auto;
+    color: #000 ;
+    background-color: #f1f1f1 ;
+    padding: 12px 24px;
+    padding-top:32px ;
+    padding-bottom: 32px;
+    margin-top: 16px;
+    box-sizing: inherit; 
+}
+#contact>h3{
+    text-align: center;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 24px;
+    box-sizing: inherit;
+}
+hr{
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+    box-sizing: content-box;
+  height: 0;
+}
+.message{
+    margin: 16px 0px;
+    box-sizing: inherit;
+}
+.type{
+    border: 1px solid #ccc;
+    padding: 8px;
+    display: block;
+    width: 100%;
+    box-sizing: inherit;
+    font: inherit;
+    overflow: visible;
+}
+.send{
+    display: block;
+    width: 100%;
+    color: #fff;
+    background-color: #616161;
+    text-align: center;
+    border: none;
+    padding: 8px 16px;
+    text-transform: none;
+    margin: 0;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.send:hover{
+    background-color: grey;
+    color: #000;
+}
+.w3{
+    color: #000;
+    transition: 0.4s ease;
+}
+.w3:hover{
+    color: green;
+}
+@media screen and (min-width : 990px) {
+    .subcontainer-1{
+        display: none;
+    }
+    .subcontainer-2{
+        display: block;
+    }
+}
+@media screen and (max-width : 991px){
+    .subcontainer-2{
+        display: none;
+    }
+    .subcontainer-1{
+        display: block;
+    }
+    .nav{
+        padding: 20px;
+    }
+}
+@media screen and (max-width : 600px) {
+    .nav{
+        padding: 50px;
+        width: 375px;
+        gap: 50px;
+    }
+    .container{
+        width: 375px;
+    }
+}
+   .item{
+      width: 350px;
+    }
+    .footer{
+        width: 500px;
+    }
+
+@media screen and (min-width : 601px) and (max-width : 990px){
+   .container{
+    width: 990px;
+   }
+   .item{
+    width: 700px;
+   }
+}
